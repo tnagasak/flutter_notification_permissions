@@ -55,13 +55,13 @@ class NotificationSettingsIos {
         alert = settings['alert'],
         badge = settings['badge'];
 
-  final bool sound;
-  final bool alert;
-  final bool badge;
+  final bool? sound;
+  final bool? alert;
+  final bool? badge;
 
   @visibleForTesting
   Map<String, dynamic> toMap() {
-    return <String, bool>{'sound': sound, 'alert': alert, 'badge': badge};
+    return <String, bool?>{'sound': sound, 'alert': alert, 'badge': badge};
   }
 
   @override
